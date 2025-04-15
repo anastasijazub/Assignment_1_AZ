@@ -43,7 +43,7 @@ install.packages("ggplot2")
 library(ggplot2)
 install.packages("wesanderson")
 library(wesanderson)
-renv::snapshot()
+renv::snapshot() #saving the library state
 
 box_plot <- ggplot(data=iris, aes(x=Species, y=Sepal.Length))+ #box plot for the mean of Sepal Lenght of each species in the dataset
   geom_boxplot(aes(fill=Species)) +
